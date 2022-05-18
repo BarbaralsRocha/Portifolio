@@ -1,0 +1,67 @@
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.social-midia{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color:rgb(251, 255, 0);
+    
+}
+
+.button-contact {
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 20em;
+    height: 22em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+    background-size: 300%;
+    border-radius: 8px;
+   }
+   
+   .button-contact:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .button-contact:before {
+    content: '';
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   
+   .button-contact:hover::before {
+    filter: blur(20px);
+   }
+   
+   .button-contact:active {
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+   }

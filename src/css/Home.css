@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.home-page{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgb(11, 0, 37) 60%, rgb(77, 57, 124) 100%);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index:0;
+}
+
+.home-title h1, .home-title h4{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(6,236,201);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.home-title h1 {
+    font-size: 50px;
+    margin-top:-30px;
+    text-shadow: 3px 3px rgba(210, 243, 241, 0.158);
+}
+
+.home-title h4 {
+    font-size: 20px;
+}
+
+/* .home-title {
+    width: 600px;
+    margin: 100px;
+} */
+
+.home-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-items:center;
+    margin: 10px 150px;
+    animation: fadein 4s; 
+    transform: translateX(-400px);
+    animation-fill-mode: forwards;  
+}
+
+.about-me {
+    color: white;
+    line-height: 35px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+
+.shape-pic {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    margin: 40px 0 0 0;
+}
+
+.home-img{
+    display:flex;
+    margin:0;
+    animation: fadein 4s; 
+    transform: translateX(600px);
+    animation-fill-mode: forwards;    
+}
+
+.barbara-picture {
+    margin: 40px 0 0 0;
+    height: 450px;
+    z-index:2;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.icon{
+    color: rgb(187, 187, 187);
+    font-size: 40px;
+}
+
+@keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; transform: translateX(0);} 
+}
+
+.shapes {
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+    animation: fadein-shapes 4s; 
+}
+
+@keyframes fadein-shapes {
+    from { opacity: 0; }
+    to { opacity: 1;} 
+}
+
+.bg1{
+    bottom:0;
+}
+
+.bg2{
+    top:0;
+    right: 0;
+}
+
+.bg3{
+    right: 0;
+    bottom: 10px;
+    width:200px;
+}

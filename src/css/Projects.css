@@ -1,0 +1,131 @@
+.cards {
+    border-radius: 8px;
+    background-image: linear-gradient(180deg, #1d005f73 60%, #3f01ce7a 100%);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cards p {
+    color: white;
+}
+
+.cards img{
+    width: 70%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.container-projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:97%;
+    margin:30px auto;
+    overflow-x:scroll;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(97, 97, 97, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(143, 142, 142, 0.295); 
+}
+
+/* ::-webkit-scrollbar-button{
+    background: rgba(143, 142, 142, 0.295); 
+} */
+
+.container-projetos h3{
+    color: white;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 3px;
+
+}
+
+.front {
+    margin-left: 150px
+}
+
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+}
+
+.cards {
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 10em;
+    height: 11em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+    background-size: 300%;
+    border-radius: 8px;
+   }
+   
+   .cards:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .cards:before {
+    content: '';
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   
+   .cards:hover::before {
+    filter: blur(20px);
+   }
+   
+   .cards:active {
+    background: linear-gradient(90deg,#1d005f73,#03a9f4,#f8f55a,#f441a5,#1d005f73);
+   }
+
+   .img{
+       color: rgba(255, 255, 255, 0.767);
+       font-size: 50px;
+   }
